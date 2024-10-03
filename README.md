@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# KinoInfo App 🍿
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Eine React-App, die mit der [TheMovieDB API](https://www.themoviedb.org/) kommuniziert und die aktuellsten Kinofilme sowie deren Informationen anzeigt.
 
-## Available Scripts
+## Features ✨
 
-In the project directory, you can run:
+- Anzeige der neuesten Kinofilme
+- Detaillierte Informationen zu jedem Film (Titel, Beschreibung, Bewertung, Release-Datum etc.)
+- Kommunikation mit der TheMovieDB API
 
-### `npm start`
+## Voraussetzungen 📋
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Node.js](https://nodejs.org/) (v12 oder höher)
+- Ein [TheMovieDB API](https://www.themoviedb.org/) Konto und ein API-Key (kostenlos)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation 🚀
 
-### `npm test`
+1. **Abhängigkeiten installieren:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+2. **TheMovieDB API-Key einrichten:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - Gehe zu [TheMovieDB](https://www.themoviedb.org/).
+   - Erstelle ein kostenloses Konto und gehe zu den Einstellungen, um deinen API-Key zu generieren.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Umgebungsvariablen konfigurieren:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Erstelle eine `.env`-Datei im Hauptverzeichnis der App und füge deinen API-Key hinzu:
 
-### `npm run eject`
+   ```bash
+   REACT_APP_API_KEY=dein-api-key
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Ersetze `dein-api-key` mit dem API-Key, den du von TheMovieDB erhalten hast.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Ausführung der App 🏃‍♂️
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **App starten:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+2. **App öffnen:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Öffne deinen Browser und gehe zu [http://localhost:3000](http://localhost:3000), um die App zu sehen.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologien 🛠️
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Frontend**: React, Axios, TailwindCSS
+- **API**: [TheMovieDB API](https://www.themoviedb.org/documentation/api)
