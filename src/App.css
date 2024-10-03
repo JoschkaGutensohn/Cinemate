@@ -1,0 +1,6 @@
+.gridautofill {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+  justify-content: center;
+}
